@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "npx nx run angular-advanced-sample:serve:development --host=0.0.0.0"
+    "start": "npx nx run angular-advanced-sample:serve:development --host=0.0.0.0 -o"
   },
   "private": true,
   "dependencies": {
