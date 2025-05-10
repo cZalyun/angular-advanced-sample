@@ -2,7 +2,9 @@
   "name": "@angular-advanced-sample/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start": "npx nx run angular-advanced-sample:serve:development --host=0.0.0.0"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~18.0.0",
@@ -54,7 +56,7 @@
     "@types/node": "18.16.9",
     "@typescript-eslint/eslint-plugin": "^7.3.0",
     "@typescript-eslint/parser": "^7.3.0",
-    "@typescript-eslint/utils": "^8.0.0-alpha.28",
+    "@typescript-eslint/utils": "^8.0.0",
     "autoprefixer": "^10.4.0",
     "eslint": "~8.57.0",
     "eslint-config-prettier": "^9.0.0",
