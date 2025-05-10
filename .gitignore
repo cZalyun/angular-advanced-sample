@@ -72,3 +72,6 @@ clipub
 # NX libs
 /.nx-cache
 /.nx
+
+# Dev container
+.env

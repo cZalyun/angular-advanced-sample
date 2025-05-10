@@ -4,11 +4,17 @@
   "features": {
     "ghcr.io/devcontainers/features/git:1": {},
     "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {},
-    "ghcr.io/devcontainers/features/node:1": {},
     "ghcr.io/devcontainers/features/sshd:1": {}
   },
   "customizations": {
+    "containerEnv": {
+      "GIT_ASKPASS": "pat.sh",
+      "GIT_TOKEN": "${localEnv:GITHUB_TOKEN}"
+    },
     "vscode": {
+      "settings": {
+        "git.userIntegratedAskPass": false
+      },
       "extensions": [
         "angular.ng-template",
         "dbaeumer.vscode-eslint",
